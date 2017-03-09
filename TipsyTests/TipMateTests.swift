@@ -1,6 +1,6 @@
 //
 //  TipsyTests.swift
-//  TipsyTests
+//  TipMateTests
 //
 //  Created by Bonilla, Stefan on 3/8/17.
 //  Copyright © 2017 Stefan Bonilla. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import Tipsy
 
-class TipsyTests: XCTestCase {
+class TipMateTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

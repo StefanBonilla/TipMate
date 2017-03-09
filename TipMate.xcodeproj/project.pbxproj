@@ -12,8 +12,8 @@
 		D874F0021E70FE9D00C6918F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D874F0001E70FE9D00C6918F /* Main.storyboard */; };
 		D874F0041E70FE9D00C6918F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D874F0031E70FE9D00C6918F /* Assets.xcassets */; };
 		D874F0071E70FE9D00C6918F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D874F0051E70FE9D00C6918F /* LaunchScreen.storyboard */; };
-		D874F0121E70FE9D00C6918F /* TipsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874F0111E70FE9D00C6918F /* TipsyTests.swift */; };
-		D874F01D1E70FE9D00C6918F /* TipsyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874F01C1E70FE9D00C6918F /* TipsyUITests.swift */; };
+		D874F0121E70FE9D00C6918F /* TipMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874F0111E70FE9D00C6918F /* TipMateTests.swift */; };
+		D874F01D1E70FE9D00C6918F /* TipMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874F01C1E70FE9D00C6918F /* TipMateUITests.swift */; };
 		D874F02B1E7120F500C6918F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874F02A1E7120F500C6918F /* SettingsViewController.swift */; };
 		D874F02D1E71285000C6918F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874F02C1E71285000C6918F /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -36,18 +36,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D874EFF91E70FE9D00C6918F /* Tipsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D874EFF91E70FE9D00C6918F /* TipMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D874EFFC1E70FE9D00C6918F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D874EFFE1E70FE9D00C6918F /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		D874F0011E70FE9D00C6918F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D874F0031E70FE9D00C6918F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D874F0061E70FE9D00C6918F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D874F0081E70FE9D00C6918F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D874F00D1E70FE9D00C6918F /* TipsyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D874F0111E70FE9D00C6918F /* TipsyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyTests.swift; sourceTree = "<group>"; };
+		D874F00D1E70FE9D00C6918F /* TipMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipMateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D874F0111E70FE9D00C6918F /* TipMateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipMateTests.swift; sourceTree = "<group>"; };
 		D874F0131E70FE9D00C6918F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D874F0181E70FE9D00C6918F /* TipsyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D874F01C1E70FE9D00C6918F /* TipsyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyUITests.swift; sourceTree = "<group>"; };
+		D874F0181E70FE9D00C6918F /* TipMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D874F01C1E70FE9D00C6918F /* TipMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipMateUITests.swift; sourceTree = "<group>"; };
 		D874F01E1E70FE9D00C6918F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D874F02A1E7120F500C6918F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D874F02C1E71285000C6918F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -81,9 +81,9 @@
 		D874EFF01E70FE9D00C6918F = {
 			isa = PBXGroup;
 			children = (
-				D874EFFB1E70FE9D00C6918F /* Tipsy */,
-				D874F0101E70FE9D00C6918F /* TipsyTests */,
-				D874F01B1E70FE9D00C6918F /* TipsyUITests */,
+				D874EFFB1E70FE9D00C6918F /* TipMate */,
+				D874F0101E70FE9D00C6918F /* TipMateTests */,
+				D874F01B1E70FE9D00C6918F /* TipMateUITests */,
 				D874EFFA1E70FE9D00C6918F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,14 +91,14 @@
 		D874EFFA1E70FE9D00C6918F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D874EFF91E70FE9D00C6918F /* Tipsy.app */,
-				D874F00D1E70FE9D00C6918F /* TipsyTests.xctest */,
-				D874F0181E70FE9D00C6918F /* TipsyUITests.xctest */,
+				D874EFF91E70FE9D00C6918F /* TipMate.app */,
+				D874F00D1E70FE9D00C6918F /* TipMateTests.xctest */,
+				D874F0181E70FE9D00C6918F /* TipMateUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D874EFFB1E70FE9D00C6918F /* Tipsy */ = {
+		D874EFFB1E70FE9D00C6918F /* TipMate */ = {
 			isa = PBXGroup;
 			children = (
 				D874EFFC1E70FE9D00C6918F /* AppDelegate.swift */,
@@ -110,33 +110,36 @@
 				D874F0081E70FE9D00C6918F /* Info.plist */,
 				D874F02C1E71285000C6918F /* Constants.swift */,
 			);
+			name = TipMate;
 			path = Tipsy;
 			sourceTree = "<group>";
 		};
-		D874F0101E70FE9D00C6918F /* TipsyTests */ = {
+		D874F0101E70FE9D00C6918F /* TipMateTests */ = {
 			isa = PBXGroup;
 			children = (
-				D874F0111E70FE9D00C6918F /* TipsyTests.swift */,
+				D874F0111E70FE9D00C6918F /* TipMateTests.swift */,
 				D874F0131E70FE9D00C6918F /* Info.plist */,
 			);
+			name = TipMateTests;
 			path = TipsyTests;
 			sourceTree = "<group>";
 		};
-		D874F01B1E70FE9D00C6918F /* TipsyUITests */ = {
+		D874F01B1E70FE9D00C6918F /* TipMateUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D874F01C1E70FE9D00C6918F /* TipsyUITests.swift */,
+				D874F01C1E70FE9D00C6918F /* TipMateUITests.swift */,
 				D874F01E1E70FE9D00C6918F /* Info.plist */,
 			);
+			name = TipMateUITests;
 			path = TipsyUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D874EFF81E70FE9D00C6918F /* Tipsy */ = {
+		D874EFF81E70FE9D00C6918F /* TipMate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D874F0211E70FE9D00C6918F /* Build configuration list for PBXNativeTarget "Tipsy" */;
+			buildConfigurationList = D874F0211E70FE9D00C6918F /* Build configuration list for PBXNativeTarget "TipMate" */;
 			buildPhases = (
 				D874EFF51E70FE9D00C6918F /* Sources */,
 				D874EFF61E70FE9D00C6918F /* Frameworks */,
@@ -146,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = Tipsy;
+			name = TipMate;
 			productName = Tipsy;
-			productReference = D874EFF91E70FE9D00C6918F /* Tipsy.app */;
+			productReference = D874EFF91E70FE9D00C6918F /* TipMate.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D874F00C1E70FE9D00C6918F /* TipsyTests */ = {
+		D874F00C1E70FE9D00C6918F /* TipMateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D874F0241E70FE9D00C6918F /* Build configuration list for PBXNativeTarget "TipsyTests" */;
+			buildConfigurationList = D874F0241E70FE9D00C6918F /* Build configuration list for PBXNativeTarget "TipMateTests" */;
 			buildPhases = (
 				D874F0091E70FE9D00C6918F /* Sources */,
 				D874F00A1E70FE9D00C6918F /* Frameworks */,
@@ -164,14 +167,14 @@
 			dependencies = (
 				D874F00F1E70FE9D00C6918F /* PBXTargetDependency */,
 			);
-			name = TipsyTests;
+			name = TipMateTests;
 			productName = TipsyTests;
-			productReference = D874F00D1E70FE9D00C6918F /* TipsyTests.xctest */;
+			productReference = D874F00D1E70FE9D00C6918F /* TipMateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D874F0171E70FE9D00C6918F /* TipsyUITests */ = {
+		D874F0171E70FE9D00C6918F /* TipMateUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D874F0271E70FE9D00C6918F /* Build configuration list for PBXNativeTarget "TipsyUITests" */;
+			buildConfigurationList = D874F0271E70FE9D00C6918F /* Build configuration list for PBXNativeTarget "TipMateUITests" */;
 			buildPhases = (
 				D874F0141E70FE9D00C6918F /* Sources */,
 				D874F0151E70FE9D00C6918F /* Frameworks */,
@@ -182,9 +185,9 @@
 			dependencies = (
 				D874F01A1E70FE9D00C6918F /* PBXTargetDependency */,
 			);
-			name = TipsyUITests;
+			name = TipMateUITests;
 			productName = TipsyUITests;
-			productReference = D874F0181E70FE9D00C6918F /* TipsyUITests.xctest */;
+			productReference = D874F0181E70FE9D00C6918F /* TipMateUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D874EFF41E70FE9D00C6918F /* Build configuration list for PBXProject "Tipsy" */;
+			buildConfigurationList = D874EFF41E70FE9D00C6918F /* Build configuration list for PBXProject "TipMate" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,9 +232,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D874EFF81E70FE9D00C6918F /* Tipsy */,
-				D874F00C1E70FE9D00C6918F /* TipsyTests */,
-				D874F0171E70FE9D00C6918F /* TipsyUITests */,
+				D874EFF81E70FE9D00C6918F /* TipMate */,
+				D874F00C1E70FE9D00C6918F /* TipMateTests */,
+				D874F0171E70FE9D00C6918F /* TipMateUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D874F0121E70FE9D00C6918F /* TipsyTests.swift in Sources */,
+				D874F0121E70FE9D00C6918F /* TipMateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D874F01D1E70FE9D00C6918F /* TipsyUITests.swift in Sources */,
+				D874F01D1E70FE9D00C6918F /* TipMateUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,12 +299,12 @@
 /* Begin PBXTargetDependency section */
 		D874F00F1E70FE9D00C6918F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D874EFF81E70FE9D00C6918F /* Tipsy */;
+			target = D874EFF81E70FE9D00C6918F /* TipMate */;
 			targetProxy = D874F00E1E70FE9D00C6918F /* PBXContainerItemProxy */;
 		};
 		D874F01A1E70FE9D00C6918F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D874EFF81E70FE9D00C6918F /* Tipsy */;
+			target = D874EFF81E70FE9D00C6918F /* TipMate */;
 			targetProxy = D874F0191E70FE9D00C6918F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -424,7 +427,7 @@
 				DEVELOPMENT_TEAM = TUB89JSXDJ;
 				INFOPLIST_FILE = Tipsy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sbonilla.Tipsy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbonilla.TipMate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -437,7 +440,7 @@
 				DEVELOPMENT_TEAM = TUB89JSXDJ;
 				INFOPLIST_FILE = Tipsy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sbonilla.Tipsy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbonilla.TipMate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -454,7 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sbonilla.TipsyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipsy.app/Tipsy";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipMate.app/TipMate";
 			};
 			name = Debug;
 		};
@@ -469,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sbonilla.TipsyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tipsy.app/Tipsy";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipMate.app/TipMate";
 			};
 			name = Release;
 		};
@@ -504,7 +507,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D874EFF41E70FE9D00C6918F /* Build configuration list for PBXProject "Tipsy" */ = {
+		D874EFF41E70FE9D00C6918F /* Build configuration list for PBXProject "TipMate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D874F01F1E70FE9D00C6918F /* Debug */,
@@ -513,7 +516,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D874F0211E70FE9D00C6918F /* Build configuration list for PBXNativeTarget "Tipsy" */ = {
+		D874F0211E70FE9D00C6918F /* Build configuration list for PBXNativeTarget "TipMate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D874F0221E70FE9D00C6918F /* Debug */,
@@ -521,7 +524,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		D874F0241E70FE9D00C6918F /* Build configuration list for PBXNativeTarget "TipsyTests" */ = {
+		D874F0241E70FE9D00C6918F /* Build configuration list for PBXNativeTarget "TipMateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D874F0251E70FE9D00C6918F /* Debug */,
@@ -529,7 +532,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		D874F0271E70FE9D00C6918F /* Build configuration list for PBXNativeTarget "TipsyUITests" */ = {
+		D874F0271E70FE9D00C6918F /* Build configuration list for PBXNativeTarget "TipMateUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D874F0281E70FE9D00C6918F /* Debug */,

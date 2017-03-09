@@ -1,6 +1,6 @@
 //
 //  Constants.swift
-//  Tipsy
+//  TipMate
 //
 //  Created by Bonilla, Stefan on 3/8/17.
 //  Copyright © 2017 Stefan Bonilla. All rights reserved.

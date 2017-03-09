@@ -8,7 +8,7 @@
 
 import XCTest
 
-class TipsyUITests: XCTestCase {
+class TipMateUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
