@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XcN-ao-ALd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tip View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TipViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,168 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="PEX-Iu-SLn">
+                                <rect key="frame" x="16" y="144" width="343" height="47"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="calculate" destination="BYZ-38-t0r" eventType="editingChanged" id="UVP-au-k0a"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Gwu-nA-Zsx">
+                                <rect key="frame" x="16" y="231" width="343" height="29"/>
+                                <color key="backgroundColor" red="0.60000324249267578" green="0.82643824815750122" blue="0.92287153005599976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="10%"/>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="calculate" destination="BYZ-38-t0r" eventType="valueChanged" id="TEN-i4-orq"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpx-50-cYd">
+                                <rect key="frame" x="16" y="299" width="343" height="35"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0.00">
+                                        <attributes>
+                                            <font key="NSFont" size="30" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mM4-Gv-3lf">
+                                <rect key="frame" x="16" y="374" width="343" height="56"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0.00">
+                                        <attributes>
+                                            <font key="NSFont" size="48" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARN-0u-4ri">
+                                <rect key="frame" x="16" y="295.5" width="22" height="42"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="+">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvf-A8-2hG">
+                                <rect key="frame" x="16" y="381.5" width="22" height="42"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="=">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ7-U6-UnF">
+                                <rect key="frame" x="16" y="463.5" width="22" height="42"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="÷">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="Menlo-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tdm-iR-CaW">
+                                <rect key="frame" x="140" y="470" width="94" height="29"/>
+                                <color key="backgroundColor" red="0.60000324249267578" green="0.82643824815750122" blue="0.92287153005599976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="calculate" destination="BYZ-38-t0r" eventType="valueChanged" id="CW5-3t-SKA"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXV-QH-Wpk">
+                                <rect key="frame" x="336.5" y="462.5" width="22.5" height="43.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="1">
+                                        <attributes>
+                                            <font key="NSFont" size="37" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60000324249267578" green="0.82643824815750122" blue="0.92287153005599976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="PEX-Iu-SLn" secondAttribute="leading" id="2gP-TF-cHr"/>
+                            <constraint firstItem="mM4-Gv-3lf" firstAttribute="width" secondItem="zpx-50-cYd" secondAttribute="width" id="7Pn-l8-7a1"/>
+                            <constraint firstItem="cvf-A8-2hG" firstAttribute="centerY" secondItem="mM4-Gv-3lf" secondAttribute="centerY" id="8Os-f0-aVy"/>
+                            <constraint firstItem="mM4-Gv-3lf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eav-fE-J21"/>
+                            <constraint firstItem="mM4-Gv-3lf" firstAttribute="top" secondItem="zpx-50-cYd" secondAttribute="bottom" constant="40" id="EfN-oj-C67"/>
+                            <constraint firstItem="tdm-iR-CaW" firstAttribute="top" secondItem="mM4-Gv-3lf" secondAttribute="bottom" constant="40" id="Iom-kI-omN"/>
+                            <constraint firstItem="zpx-50-cYd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kpa-Cc-BAu"/>
+                            <constraint firstItem="AJ7-U6-UnF" firstAttribute="centerY" secondItem="tdm-iR-CaW" secondAttribute="centerY" id="Qmg-bi-czW"/>
+                            <constraint firstItem="zpx-50-cYd" firstAttribute="top" secondItem="Gwu-nA-Zsx" secondAttribute="bottom" constant="40" id="Qn1-QX-YqC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mXV-QH-Wpk" secondAttribute="trailing" id="Rgz-Re-3jR"/>
+                            <constraint firstItem="zpx-50-cYd" firstAttribute="width" secondItem="Gwu-nA-Zsx" secondAttribute="width" id="WJm-m0-ySZ"/>
+                            <constraint firstItem="Gwu-nA-Zsx" firstAttribute="width" secondItem="PEX-Iu-SLn" secondAttribute="width" id="XwG-Un-OfG"/>
+                            <constraint firstItem="Gwu-nA-Zsx" firstAttribute="top" secondItem="PEX-Iu-SLn" secondAttribute="bottom" constant="40" id="XxB-HL-rJB"/>
+                            <constraint firstItem="Gwu-nA-Zsx" firstAttribute="centerX" secondItem="PEX-Iu-SLn" secondAttribute="centerX" id="aB5-G8-r8C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PEX-Iu-SLn" secondAttribute="trailing" id="daj-WA-7Xw"/>
+                            <constraint firstItem="tdm-iR-CaW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hTD-9z-A1z"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ARN-0u-4ri" secondAttribute="leading" id="i0g-cR-eg0"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="AJ7-U6-UnF" secondAttribute="leading" id="m6R-w0-6rG"/>
+                            <constraint firstItem="mXV-QH-Wpk" firstAttribute="centerY" secondItem="tdm-iR-CaW" secondAttribute="centerY" id="oil-Cm-bGh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cvf-A8-2hG" secondAttribute="leading" id="tSW-Q8-JCm"/>
+                            <constraint firstItem="PEX-Iu-SLn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="u8O-zb-hrt"/>
+                            <constraint firstItem="ARN-0u-4ri" firstAttribute="centerY" secondItem="zpx-50-cYd" secondAttribute="centerY" id="xcU-91-G15"/>
+                            <constraint firstItem="PEX-Iu-SLn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yRG-Z4-xar"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pc6-OQ-nhO"/>
+                    <connections>
+                        <outlet property="billTextField" destination="PEX-Iu-SLn" id="2bd-OS-KI0"/>
+                        <outlet property="splitLabel" destination="mXV-QH-Wpk" id="dL6-Qw-Tn7"/>
+                        <outlet property="splitStepper" destination="tdm-iR-CaW" id="WKV-4x-nvu"/>
+                        <outlet property="tipLabel" destination="zpx-50-cYd" id="ylq-h0-iHt"/>
+                        <outlet property="tipSelector" destination="Gwu-nA-Zsx" id="XjN-nc-Hn8"/>
+                        <outlet property="totalLabel" destination="mM4-Gv-3lf" id="PxO-bT-HNX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RsE-vF-yGo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XcN-ao-ALd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wt9-wY-UMU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WBz-wZ-Mt3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HfO-i1-Elu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="156" y="139"/>
         </scene>
     </scenes>
 </document>
