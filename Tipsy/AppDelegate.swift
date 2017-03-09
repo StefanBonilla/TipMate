@@ -15,7 +15,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Set User Defaults
+        let defaults = UserDefaults.standard
+        
+        // Settings
+        // - Split
+        if defaults.object(forKey: kSETTINGS_SPLIT) == nil {
+            defaults.set(true, forKey: kSETTINGS_SPLIT)
+        }
+        // - Preferred Tip
+        if defaults.object(forKey: kSETTINGS_PREFERRED_TIP) == nil {
+            defaults.set(1, forKey: kSETTINGS_PREFERRED_TIP)
+        }
+        // - Tip 1
+        if defaults.object(forKey: kSETTINGS_TIP_1) == nil {
+            defaults.set(0.10, forKey: kSETTINGS_TIP_1)
+        }
+        // - Tip 2
+        if defaults.object(forKey: kSETTINGS_TIP_2) == nil {
+            defaults.set(0.15, forKey: kSETTINGS_TIP_2)
+        }
+        // - Tip 3
+        if defaults.object(forKey: kSETTINGS_TIP_3) == nil {
+            defaults.set(0.20, forKey: kSETTINGS_TIP_3)
+        }
+        
+        defaults.synchronize()
+        
         return true
     }
 

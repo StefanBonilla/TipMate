@@ -14,6 +14,8 @@
 		D874F0071E70FE9D00C6918F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D874F0051E70FE9D00C6918F /* LaunchScreen.storyboard */; };
 		D874F0121E70FE9D00C6918F /* TipsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874F0111E70FE9D00C6918F /* TipsyTests.swift */; };
 		D874F01D1E70FE9D00C6918F /* TipsyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874F01C1E70FE9D00C6918F /* TipsyUITests.swift */; };
+		D874F02B1E7120F500C6918F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874F02A1E7120F500C6918F /* SettingsViewController.swift */; };
+		D874F02D1E71285000C6918F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D874F02C1E71285000C6918F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D874F0181E70FE9D00C6918F /* TipsyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D874F01C1E70FE9D00C6918F /* TipsyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyUITests.swift; sourceTree = "<group>"; };
 		D874F01E1E70FE9D00C6918F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D874F02A1E7120F500C6918F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D874F02C1E71285000C6918F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			children = (
 				D874EFFC1E70FE9D00C6918F /* AppDelegate.swift */,
 				D874EFFE1E70FE9D00C6918F /* TipViewController.swift */,
+				D874F02A1E7120F500C6918F /* SettingsViewController.swift */,
 				D874F0001E70FE9D00C6918F /* Main.storyboard */,
 				D874F0031E70FE9D00C6918F /* Assets.xcassets */,
 				D874F0051E70FE9D00C6918F /* LaunchScreen.storyboard */,
 				D874F0081E70FE9D00C6918F /* Info.plist */,
+				D874F02C1E71285000C6918F /* Constants.swift */,
 			);
 			path = Tipsy;
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 			files = (
 				D874EFFF1E70FE9D00C6918F /* TipViewController.swift in Sources */,
 				D874EFFD1E70FE9D00C6918F /* AppDelegate.swift in Sources */,
+				D874F02B1E7120F500C6918F /* SettingsViewController.swift in Sources */,
+				D874F02D1E71285000C6918F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
