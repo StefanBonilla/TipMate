@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--TipBitch-->
+        <!--TipMate-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TipViewController" customModule="TipMate" customModuleProvider="target" sceneMemberID="viewController">
@@ -164,7 +164,7 @@
                             <constraint firstItem="PEX-Iu-SLn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yRG-Z4-xar"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="TipBitch" id="pc6-OQ-nhO">
+                    <navigationItem key="navigationItem" title="TipMate" id="pc6-OQ-nhO">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="Vfp-vM-qNV">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
