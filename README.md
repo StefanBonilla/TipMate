@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Heres a walkthrough of implemented user stories:
 
-<a src='http://imgur.com/a/yC0ms' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+[TipMate Demo](http://imgur.com/a/yC0ms)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
